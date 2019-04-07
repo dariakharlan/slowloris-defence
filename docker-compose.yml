@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  nginx:
+    build:
+      context: nginx
+    ports:
+      - 8080:80
+    ulimits:
+      nofile:
+        soft: "100000"
+        hard: "100000"
+
+  slowloris:
+    build:
+      context: goloris
+    command: ["./goloris", "-victimUrl", "http://nginx"]
