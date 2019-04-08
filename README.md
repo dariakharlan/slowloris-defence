@@ -6,6 +6,8 @@
 docker-compose up -d --build
 ```
 
+Access nginx default page locally at http://localhost:8080
+
 ### What was done to mitigate the attack
 
 1. Limiting number of connections from single IP address: added following config to nginx `default.conf` file
