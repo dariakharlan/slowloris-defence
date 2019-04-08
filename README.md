@@ -1,4 +1,4 @@
-# Slowloris defence example
+# Slowloris nginx defence example
 
 ### How to run
 
